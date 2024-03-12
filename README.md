@@ -10,7 +10,7 @@
 
 <a href="https://arxiv.org/"><img src="https://img.shields.io/badge/arXiv-xxx-b31b1b.svg" height="22.5"></a>
 
-![alt text](./assets/images/text-to-3D-overview.png)
+![alt text](./images/text-to-3D-overview.png)
 
 ## Abstract
 > Recent years have seen an explosion of work and interest in text-to-3D shape generation. Much of the progress is driven by
@@ -61,11 +61,11 @@ Liu et al.,NeurIPS 2023\
 Luo et al., NeurIPS 2023\
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/crockwell/Cap3D)
 
-![alt text](./assets/images/overview-models.png)
+![alt text](./images/overview-models.png)
 
 ## <a id="3DPT"></a>Paired Text to 3D (3DPT)
 
-![alt text](./assets/images/3DPT-table.png)
+![alt text](./images/3DPT-table.png)
 
 - [Text2Shape: Generating Shapes from Natural Language by Learning Joint Embeddings](https://arxiv.org/abs/1803.08495),\
 Chen et al., Arxiv 2018\
@@ -74,7 +74,7 @@ Chen et al., Arxiv 2018\
 Liu et al., CVPR 2022\
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/liuzhengzhe/Towards-Implicit-Text-Guided-Shape-Generation)
 
-![alt text](./assets/images/auto-diff.png)
+![alt text](./images/auto-diff.png)
 
 ### Autoregressive Prior
 
@@ -116,7 +116,7 @@ Luo et al., Arxiv 2022\
 
 ## <a id="3DUT"></a>Unpaired 3D Data (3DUT)
 
-![alt text](./assets/images/3DUT-table.png)
+![alt text](./images/3DUT-table.png)
 
 - [CLIP-Forge: Towards Zero-Shot Text-to-Shape Generation](https://arxiv.org/abs/2110.02624),\
 Sanghi et al., CVPR 2022\
@@ -135,7 +135,7 @@ Wei et al., CVPR 2023\
 ### Unsupervised CLIP Guidance
 
 
-![alt text](./assets/images/clip-table.png)
+![alt text](./images/clip-table.png)
 
 - [Zero-Shot Text-Guided Object Generation with Dream Fields](https://arxiv.org/abs/2112.01455),\
 Jain et al., CVPR 2022\
@@ -152,7 +152,7 @@ Xu et al., CVPR 2023\
 
 ### Unsupervised Diffusion Guidance
 
-![alt text](./assets/images/diffusion-table.png)
+![alt text](./images/diffusion-table.png)
 
 #### Loss Formulation
 - [DreamFusion: Text-to-3D using 2D Diffusion](https://arxiv.org/abs/2209.14988),\
@@ -237,7 +237,7 @@ Nichol et al., Arxiv 2022\
 
 ### 3D-aware T2I
 
-![alt text](./assets/images/Hybrid3D-table.png)
+![alt text](./images/Hybrid3D-table.png)
 
 #### Text Conditioning
 - [MVDream: Multi-view Diffusion for 3D Generation](https://arxiv.org/abs/2308.16512),\
