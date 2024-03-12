@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>TT3DSTAR</title>
+<title>TT3DSTAR </title>
 <meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:title" content="TT3DSTAR" />
 <meta name="author" content="default" />
@@ -55,7 +55,13 @@ derive a systematic categorization of recent work on text-to-3D shape generation
 Finally, we discuss limitations of the existing categories of methods, and delineate promising directions for future work.</p>
 </blockquote>
 
-<h2 id="datasets">Datasets</h2>
+<p>We list the commonly used datasets used to train these methods <a href="#DATASETS">here</a>.</p>
+
+<p>The methods are divided into four families as shown in the table below, namely: 1) <a href="#3DPT">Paired Text to 3D (3DPT)</a>; 2) <a href="#3DUT">Unpaired 3D Data (3DUT)</a>; 3) <a href="#NO3D">Text-to-3D without 3D data (NO3D)</a>; and 4) <a href="#HYBRID3D">Hybrid3D</a>.</p>
+
+<p>Finally, we include works focused on generating <a href="#MULTIOBJGEN">multi-object 3D scenes</a>, <a href="#EDIT3D">editing of 3D shapes</a> and <a href="#EVAL">evaluation</a> of text-to-3d methods.</p>
+
+<h2 id="datasets"><a id="DATASETS"></a>Datasets</h2>
 
 <h3 id="3d">3D</h3>
 <ul>
@@ -94,7 +100,9 @@ Luo et al., NeurIPS 2023<br />
 
 <p><img src="./assets/images/overview-models.png" alt="alt text" /></p>
 
-<h2 id="paired-text-to-3d-3dpt">Paired Text to 3D (3DPT)</h2>
+<h2 id="paired-text-to-3d-3dpt"><a id="3DPT"></a>Paired Text to 3D (3DPT)</h2>
+
+<p><img src="./assets/images/3DPT-table.png" alt="alt text" /></p>
 
 <ul>
   <li><a href="https://arxiv.org/abs/1803.08495">Text2Shape: Generating Shapes from Natural Language by Learning Joint Embeddings</a>,<br />
@@ -150,9 +158,10 @@ Luo et al., Arxiv 2022<br />
 <a href="https://github.com/tiangeluo/ShapeCompiler"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub" /></a></li>
 </ul>
 
-<p><img src="./assets/images/3DPT-table.png" alt="alt text" /></p>
+<h2 id="unpaired-3d-data-3dut"><a id="3DUT"></a>Unpaired 3D Data (3DUT)</h2>
 
-<h2 id="unpaired-3d-data-3dut">Unpaired 3D Data (3DUT)</h2>
+<p><img src="./assets/images/3DUT-table.png" alt="alt text" /></p>
+
 <ul>
   <li><a href="https://arxiv.org/abs/2110.02624">CLIP-Forge: Towards Zero-Shot Text-to-Shape Generation</a>,<br />
 Sanghi et al., CVPR 2022<br />
@@ -167,11 +176,12 @@ Wei et al., CVPR 2023<br />
 <a href="https://github.com/plusmultiply/TAPS3D"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub" /></a></li>
 </ul>
 
-<p><img src="./assets/images/3DUT-table.png" alt="alt text" /></p>
-
-<h2 id="text-to-3d-without-3d-data-no3d">Text-to-3D without 3D data (NO3D)</h2>
+<h2 id="text-to-3d-without-3d-data-no3d"><a id="NO3D"></a>Text-to-3D without 3D data (NO3D)</h2>
 
 <h3 id="unsupervised-clip-guidance">Unsupervised CLIP Guidance</h3>
+
+<p><img src="./assets/images/clip-table.png" alt="alt text" /></p>
+
 <ul>
   <li><a href="https://arxiv.org/abs/2112.01455">Zero-Shot Text-Guided Object Generation with Dream Fields</a>,<br />
 Jain et al., CVPR 2022<br />
@@ -187,9 +197,9 @@ Xu et al., CVPR 2023<br />
 <a href="https://bluestyle97.github.io/dream3d/index.html"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub" /></a></li>
 </ul>
 
-<p><img src="./assets/images/clip-table.png" alt="alt text" /></p>
-
 <h3 id="unsupervised-diffusion-guidance">Unsupervised Diffusion Guidance</h3>
+
+<p><img src="./assets/images/diffusion-table.png" alt="alt text" /></p>
 
 <h4 id="loss-formulation">Loss Formulation</h4>
 <ul>
@@ -222,8 +232,6 @@ Chen et al., CVPR 2024<br />
 Yi et al., CVPR 2024<br />
 <a href="https://github.com/hustvl/GaussianDreamer"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub" /></a></li>
 </ul>
-
-<p><img src="./assets/images/diffusion-table.png" alt="alt text" /></p>
 
 <h4 id="janus-problem-mitigation">Janus Problem Mitigation</h4>
 <ul>
@@ -279,7 +287,7 @@ Wu et al., Arxiv 2024</li>
 <a href="https://github.com/threestudio-project/threestudio">threestudio</a></li>
 </ul>
 
-<h2 id="hybrid3d">Hybrid3D</h2>
+<h2 id="hybrid3d"><a id="HYBRID3D"></a>Hybrid3D</h2>
 <ul>
   <li><a href="https://arxiv.org/abs/2212.08751">Point-E: A System for Generating 3D Point Clouds from Complex Prompts</a>,<br />
 Nichol et al., Arxiv 2022<br />
@@ -287,6 +295,8 @@ Nichol et al., Arxiv 2022<br />
 </ul>
 
 <h3 id="3d-aware-t2i">3D-aware T2I</h3>
+
+<p><img src="./assets/images/Hybrid3D-table.png" alt="alt text" /></p>
 
 <h4 id="text-conditioning">Text Conditioning</h4>
 <ul>
@@ -329,15 +339,13 @@ Liu et al., Arxiv 2023<br />
 <a href="https://github.com/SUDO-AI-3D/One2345plus"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub" /></a></li>
 </ul>
 
-<p><img src="./assets/images/Hybrid3D-table.png" alt="alt text" /></p>
-
 <h3 id="further-reading-1">Further Reading</h3>
 <ul>
   <li><a href="https://arxiv.org/abs/2311.09217">DMV3D: Denoising Multi-View Diffusion using 3D Large Reconstruction Model</a>,<br />
 Xu et al., Arxiv 2023</li>
 </ul>
 
-<h2 id="multi-object-scene-generation">Multi Object Scene Generation</h2>
+<h2 id="multi-object-scene-generation"><a id="MULTIOBJGEN"></a>Multi Object Scene Generation</h2>
 
 <h3 id="compositional-generation">Compositional Generation</h3>
 <ul>
@@ -371,7 +379,7 @@ Zhang et al., TVCG 2024<br />
 <a href="https://github.com/eckertzhang/Text2NeRF"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub" /></a></li>
 </ul>
 
-<h2 id="editing">Editing</h2>
+<h2 id="editing"><a id="EDIT3D"></a>Editing</h2>
 
 <h3 id="shape-editing-with-clip">Shape Editing with CLIP</h3>
 <ul>
@@ -413,7 +421,7 @@ Chen et al., Arxiv 2023<br />
 <a href="https://github.com/daveredrum/SceneTex"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub" /></a></li>
 </ul>
 
-<h2 id="evaluation">Evaluation</h2>
+<h2 id="evaluation"><a id="EVAL"></a>Evaluation</h2>
 <ul>
   <li><a href="https://arxiv.org/abs/2401.04092">GPT-4V(ision) is a Human-Aligned Evaluator for Text-to-3D Generation</a>,<br />
 Yang et al., CVPR 2024<br />
