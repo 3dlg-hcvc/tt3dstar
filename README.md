@@ -8,9 +8,9 @@
 
 <sup>1</sup> Simon Fraser University <sup>2</sup> Canada-CIFAR AI Chair, Amii
 
-<a href="https://arxiv.org/"><img src="https://img.shields.io/badge/arXiv-xxx-b31b1b.svg" height=22.5></a>
+<a href="https://arxiv.org/"><img src="https://img.shields.io/badge/arXiv-xxx-b31b1b.svg" height="22.5"></a>
 
-![alt text](./images/text-to-3D-overview.png)
+![alt text](./assets/images/text-to-3D-overview.png)
 
 ## Abstract
 > Recent years have seen an explosion of work and interest in text-to-3D shape generation. Much of the progress is driven by
@@ -22,7 +22,13 @@
 > derive a systematic categorization of recent work on text-to-3D shape generation based on the type of supervision data required.
 > Finally, we discuss limitations of the existing categories of methods, and delineate promising directions for future work.
 
-## Datasets
+We list the commonly used datasets used to train these methods [here](#DATASETS).
+
+The methods are divided into four families as shown in the table below, namely: 1) [Paired Text to 3D (3DPT)](#3DPT); 2) [Unpaired 3D Data (3DUT)](#3DUT); 3) [Text-to-3D without 3D data (NO3D)](#NO3D); and 4) [Hybrid3D](#HYBRID3D).
+
+Finally, we include works focused on generating [multi-object 3D scenes](#MULTIOBJGEN), [editing of 3D shapes](#EDIT3D) and [evaluation](#EVAL) of text-to-3d methods.
+
+## <a id="DATASETS"></a>Datasets
 
 ### 3D
 - [ShapeNet: An Information-Rich 3D Model Repository](https://arxiv.org/abs/1512.03012),\
@@ -55,9 +61,11 @@ Liu et al.,NeurIPS 2023\
 Luo et al., NeurIPS 2023\
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/crockwell/Cap3D)
 
-![alt text](./images/overview-models.png)
+![alt text](./assets/images/overview-models.png)
 
-## Paired Text to 3D (3DPT)
+## <a id="3DPT"></a>Paired Text to 3D (3DPT)
+
+![alt text](./assets/images/3DPT-table.png)
 
 - [Text2Shape: Generating Shapes from Natural Language by Learning Joint Embeddings](https://arxiv.org/abs/1803.08495),\
 Chen et al., Arxiv 2018\
@@ -66,7 +74,7 @@ Chen et al., Arxiv 2018\
 Liu et al., CVPR 2022\
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/liuzhengzhe/Towards-Implicit-Text-Guided-Shape-Generation)
 
-![alt text](./images/auto-diff.png)
+![alt text](./assets/images/auto-diff.png)
 
 ### Autoregressive Prior
 
@@ -106,9 +114,10 @@ Koo et al., ICCV 2023\
 Luo et al., Arxiv 2022\
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tiangeluo/ShapeCompiler)
 
-![alt text](./images/3DPT-table.png)
+## <a id="3DUT"></a>Unpaired 3D Data (3DUT)
 
-## Unpaired 3D Data (3DUT)
+![alt text](./assets/images/3DUT-table.png)
+
 - [CLIP-Forge: Towards Zero-Shot Text-to-Shape Generation](https://arxiv.org/abs/2110.02624),\
 Sanghi et al., CVPR 2022\
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AutodeskAILab/Clip-Forge)
@@ -121,11 +130,13 @@ Liu et al., ICLR 2023\
 Wei et al., CVPR 2023\
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/plusmultiply/TAPS3D)
 
-![alt text](./images/3DUT-table.png)
-
-## Text-to-3D without 3D data (NO3D)
+## <a id="NO3D"></a>Text-to-3D without 3D data (NO3D)
 
 ### Unsupervised CLIP Guidance
+
+
+![alt text](./assets/images/clip-table.png)
+
 - [Zero-Shot Text-Guided Object Generation with Dream Fields](https://arxiv.org/abs/2112.01455),\
 Jain et al., CVPR 2022\
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/google-research/google-research/tree/master/dreamfields)
@@ -139,9 +150,9 @@ Lee et al., Arxiv 2022\
 Xu et al., CVPR 2023\
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://bluestyle97.github.io/dream3d/index.html)
 
-![alt text](./images/clip-table.png)
-
 ### Unsupervised Diffusion Guidance
+
+![alt text](./assets/images/diffusion-table.png)
 
 #### Loss Formulation
 - [DreamFusion: Text-to-3D using 2D Diffusion](https://arxiv.org/abs/2209.14988),\
@@ -170,8 +181,6 @@ Chen et al., CVPR 2024\
 - [GaussianDreamer: Fast Generation from Text to 3D Gaussians by Bridging 2D and 3D Diffusion Models](https://arxiv.org/abs/2310.08529),\
 Yi et al., CVPR 2024\
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/hustvl/GaussianDreamer)
-
-![alt text](./images/diffusion-table.png)
 
 #### Janus Problem Mitigation
 - [Debiasing Scores and Prompts of 2D Diffusion for View-consistent Text-to-3D Generation](https://arxiv.org/abs/2303.15413),\
@@ -221,12 +230,14 @@ Wu et al., Arxiv 2024
 [stable-dreamfusion](https://github.com/ashawkey/stable-dreamfusion)\
 [threestudio](https://github.com/threestudio-project/threestudio)
 
-## Hybrid3D
+## <a id="HYBRID3D"></a>Hybrid3D
 - [Point-E: A System for Generating 3D Point Clouds from Complex Prompts](https://arxiv.org/abs/2212.08751),\
 Nichol et al., Arxiv 2022\
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/openai/point-e)
 
 ### 3D-aware T2I
+
+![alt text](./assets/images/Hybrid3D-table.png)
 
 #### Text Conditioning
 - [MVDream: Multi-view Diffusion for 3D Generation](https://arxiv.org/abs/2308.16512),\
@@ -265,13 +276,11 @@ Liu et al., NeurIPS 2023\
 Liu et al., Arxiv 2023\
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SUDO-AI-3D/One2345plus)
 
-![alt text](./images/Hybrid3D-table.png)
-
 ### Further Reading
 - [DMV3D: Denoising Multi-View Diffusion using 3D Large Reconstruction Model](https://arxiv.org/abs/2311.09217),\
 Xu et al., Arxiv 2023
 
-## Multi Object Scene Generation
+## <a id="MULTIOBJGEN"></a>Multi Object Scene Generation
 
 ### Compositional Generation
 - [Set-the-Scene: Global-Local Training for Generating Controllable NeRF Scenes](https://arxiv.org/abs/2303.13450),\
@@ -301,7 +310,7 @@ Höllein et al., ICCV 2023\
 Zhang et al., TVCG 2024\
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/eckertzhang/Text2NeRF)
 
-## Editing
+## <a id="EDIT3D"></a>Editing
 
 ###  Shape Editing with CLIP
 - [CLIP-NeRF: Text-and-Image Driven Manipulation of Neural Radiance Fields](https://arxiv.org/abs/2112.05139),\
@@ -337,7 +346,7 @@ Chen et al., ICCV 2023\
 Chen et al., Arxiv 2023\
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/daveredrum/SceneTex)
 
-## Evaluation
+## <a id="EVAL"></a>Evaluation
 - [GPT-4V(ision) is a Human-Aligned Evaluator for Text-to-3D Generation](https://arxiv.org/abs/2401.04092),\
 Yang et al., CVPR 2024\
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/3DTopia/GPTEval3D)
