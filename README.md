@@ -26,6 +26,8 @@ We list the commonly used datasets used to train these methods [here](#DATASETS)
 
 The methods are divided into four families as shown in the table below, namely: 1) [Paired Text to 3D (3DPT)](#3DPT); 2) [Unpaired 3D Data (3DUT)](#3DUT); 3) [Text-to-3D without 3D data (NO3D)](#NO3D); and 4) [Hybrid3D](#HYBRID3D).
 
+![alt text](./images/classification.png)
+
 Finally, we include works focused on generating [multi-object 3D scenes](#MULTIOBJGEN), [editing of 3D shapes](#EDIT3D) and [evaluation](#EVAL) of text-to-3d methods.
 
 ## <a id="DATASETS"></a>Datasets
