@@ -8,7 +8,7 @@
 
 <sup>1</sup> Simon Fraser University <sup>2</sup> Canada-CIFAR AI Chair, Amii
 
-<a href="https://arxiv.org/"><img src="https://img.shields.io/badge/arXiv-xxx-b31b1b.svg" height="22.5"></a>
+<a href="https://arxiv.org/abs/2403.13289"><img src="https://img.shields.io/badge/arXiv-2403.13289-b31b1b.svg" height="22.5"></a>
 
 ![alt text](./images/text-to-3D-overview.png)
 
@@ -352,3 +352,15 @@ Chen et al., Arxiv 2023\
 - [GPT-4V(ision) is a Human-Aligned Evaluator for Text-to-3D Generation](https://arxiv.org/abs/2401.04092),\
 Yang et al., CVPR 2024\
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/3DTopia/GPTEval3D)
+
+## Citing
+```
+@misc{lee2024textto3d,
+      title={Text-to-3D Shape Generation}, 
+      author={Han-Hung Lee and Manolis Savva and Angel X. Chang},
+      year={2024},
+      eprint={2403.13289},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
