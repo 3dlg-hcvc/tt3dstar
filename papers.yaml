@@ -1,0 +1,135 @@
+papers:
+  ################################################################################################
+  # Tag List
+  # 3D Dataset: Papers that introduce a new 3D dataset
+
+  # Text-3D Dataset: Papers that introduce a new dataset that contains both text and 3D data
+
+  # 3DPT: 3D paired text papers
+  # Autoregressive Prior: Paired with 3DPT, uses LAM
+  # Diffusion Prior: Paired with 3DPT, uses LDM
+  # Structure Aware: Paired with 3DPT, uses structured representations
+
+  # In Survey: Papers that are included in the original survey paper
+  # Added Paper: Papers that were added later on
+  ################################################################################################
+
+  ################################################################################################
+  # 3D Dataset Papers
+  ################################################################################################
+  - title: "ShapeNet: An Information-Rich 3D Model Repository"
+    authors: "Chang, Angel X and Funkhouser, Thomas and Guibas, Leonidas and Hanrahan, Pat and Huang, Qixing and Li, Zimo and Savarese, Silvio and Savva, Manolis and Song, Shuran and Su, Hao and others"
+    web: "https://shapenet.org/"
+    paper: "https://arxiv.org/abs/1512.03012"
+    code: ""
+    year: "2015"
+    venue: "Arxiv"
+    tags: 
+      - "3D Dataset"
+      - "In Survey"
+  
+  - title: "ABO: Dataset and Benchmarks for Real-World 3D Object Understanding"
+    authors: "Collins, Jasmine and Goel, Shubham and Deng, Kenan and Luthra, Achleshwar and Xu, Leon and Gundogdu, Erhan and Zhang, Xi and Vicente, Tomas F Yago and Dideriksen, Thomas and Arora, Himanshu and others"
+    web: "https://amazon-berkeley-objects.s3.amazonaws.com/index.html"
+    paper: "https://arxiv.org/abs/2110.06199"
+    code: ""
+    year: "2022"
+    venue: "CVPR"
+    tags: 
+      - "3D Dataset"
+      - "In Survey"
+  
+  - title: "Objaverse: A Universe of Annotated 3D Objects"
+    authors: "Deitke, Matt and Schwenk, Dustin and Salvador, Jordi and Weihs, Luca and Michel, Oscar and VanderBilt, Eli and Schmidt, Ludwig and Ehsani, Kiana and Kembhavi, Aniruddha and Farhadi, Ali"
+    web: "https://objaverse.allenai.org/"
+    paper: "https://arxiv.org/abs/2212.08051"
+    code: "https://github.com/allenai/objaverse-xl"
+    year: "2023"
+    venue: "CVPR"
+    tags: 
+      - "3D Dataset"
+      - "In Survey"
+
+  - title: "Objaverse-XL: A Universe of 10M+ 3D Objects"
+    authors: "Deitke, Matt and Liu, Ruoshi and Wallingford, Matthew and Ngo, Huong and Michel, Oscar and Kusupati, Aditya and Fan, Alan and Laforte, Christian and Voleti, Vikram and Gadre, Samir Yitzhak and others"
+    web: "https://objaverse.allenai.org/"
+    paper: "https://arxiv.org/abs/2307.05663"
+    code: "https://github.com/allenai/objaverse-xl"
+    year: "2023"
+    venue: "NeurIPS"
+    tags: 
+      - "3D Dataset"
+      - "In Survey"
+
+  ################################################################################################
+  # Text-3D Dataset Papers
+  ################################################################################################
+  - title: "Text2Shape: Generating Shapes from Natural Language by Learning Joint Embeddings"
+    authors: "Chen, Kevin and Choy, Christopher B and Savva, Manolis and Chang, Angel X and Funkhouser, Thomas and Savarese, Silvio"
+    web: "http://text2shape.stanford.edu/"
+    paper: "https://arxiv.org/abs/1803.08495"
+    code: "https://github.com/kchen92/text2shape"
+    year: "2018"
+    venue: "Arxiv"
+    tags: 
+      - "Text-3D Dataset"
+      - "In Survey"
+  
+  - title: "ShapeGlot: Learning Language for Shape Differentiation"
+    authors: "Achlioptas, Panos and Fan, Judy and Hawkins, Robert and Goodman, Noah and Guibas, Leonidas J"
+    web: "https://ai.stanford.edu/~optas/shapeglot/"
+    paper: "https://arxiv.org/abs/1905.02925"
+    code: "https://github.com/optas/shapeglot"
+    year: "2019"
+    venue: "ICCV"
+    tags: 
+      - "Text-3D Dataset"
+      - "In Survey"
+
+  - title: "ShapeTalk: A Language Dataset and Framework for 3D Shape Edits and Deformations"
+    authors: "Achlioptas, Panos and Huang, Ian and Sung, Minhyuk and Tulyakov, Sergey and Guibas, Leonidas"
+    web: "https://changeit3d.github.io/"
+    paper: "https://openaccess.thecvf.com/content/CVPR2023/papers/Achlioptas_ShapeTalk_A_Language_Dataset_and_Framework_for_3D_Shape_Edits_CVPR_2023_paper.pdf"
+    code: "https://github.com/optas/changeit3d"
+    year: "2023"
+    venue: "CVPR"
+    tags: 
+      - "Text-3D Dataset"
+      - "In Survey"
+  
+  - title: "OpenShape: Scaling Up 3D Shape Representation Towards Open-World Understanding"
+    authors: "Liu, Minghua and Shi, Ruoxi and Kuang, Kaiming and Zhu, Yinhao and Li, Xuanlin and Han, Shizhong and Cai, Hong and Porikli, Fatih and Su, Hao"
+    web: "https://colin97.github.io/OpenShape/"
+    paper: "https://arxiv.org/abs/2305.10764"
+    code: "https://github.com/Colin97/OpenShape_code"
+    year: "2023"
+    venue: "NeurIPS"
+    tags: 
+      - "Text-3D Dataset"
+      - "In Survey"
+
+  - title: "Scalable 3D Captioning with Pretrained Models"
+    authors: "Luo, Tiange and Rockwell, Chris and Lee, Honglak and Johnson, Justin"
+    web: "https://cap3d-um.github.io/"
+    paper: "https://arxiv.org/abs/2306.07279"
+    code: "https://github.com/crockwell/Cap3D"
+    year: "2023"
+    venue: "NeurIPS"
+    tags: 
+      - "Text-3D Dataset"
+      - "In Survey"
+
+  ################################################################################################
+  # 3DPT Papers
+  ################################################################################################
+  # - title: "Title of the Paper"
+  #   authors: "List of Authors"
+  #   web: "URL to the Paper's Webpage"
+  #   paper: "URL to the Paper PDF"
+  #   code: "URL to the Code Repository"
+  #   year: "Year of Publication"
+  #   venue: "Conference or Journal Venue"
+  #   tags: 
+  #     - "Paper Classification 1"
+  #     - "Paper Classification 2"
+  #     - "Paper Classification 3"
