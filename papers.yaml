@@ -10,6 +10,17 @@ papers:
   # Diffusion Prior: Paired with 3DPT, uses LDM
   # Structure Aware: Paired with 3DPT, uses structured representations
 
+  # 3DUT: Unpaired 3D Data papers
+  # CLIP Guidance: Uses CLIP model for alignment or guidance
+
+  # NO3D: Text-to-3D without 3D data
+  # CLIP Guidance: Uses CLIP model for alignment or guidance
+  # Diffusion Guidance: Uses diffusion model for alignment or guidance
+  # Loss Formulation
+  # 3D Representation Improvements
+  # Janus Problem Mitigation
+  # Generative Modeling: In the context of NO3D not per prompt tuning, but a generative model
+
   # In Survey: Papers that are included in the original survey paper
   # Added Paper: Papers that were added later on
   ################################################################################################
@@ -74,6 +85,7 @@ papers:
     tags: 
       - "Text-3D Dataset"
       - "In Survey"
+      - "3DPT"
   
   - title: "ShapeGlot: Learning Language for Shape Differentiation"
     authors: "Achlioptas, Panos and Fan, Judy and Hawkins, Robert and Goodman, Noah and Guibas, Leonidas J"
@@ -122,6 +134,143 @@ papers:
   ################################################################################################
   # 3DPT Papers
   ################################################################################################
+  # Text2Shape already in the section Text-3D Dataset Papers
+
+  - title: "Towards Implicit Text-Guided 3D Shape Generation"
+    authors: "Zhengzhe Liu and Yi Wang and Xiaojuan Qi and Chi-Wing Fu"
+    web: ""
+    paper: "https://arxiv.org/abs/2203.14622"
+    code: "https://github.com/liuzhengzhe/Towards-Implicit-Text-Guided-Shape-Generation"
+    year: "2022"
+    venue: "CVPR"
+    tags: 
+      - "3DPT"
+      - "In Survey"
+
+  - title: "AutoSDF: Shape Priors for 3D Completion, Reconstruction and Generation"
+    authors: "Paritosh Mittal and Yen-Chi Cheng and Maneesh Singh and Shubham Tulsiani"
+    web: "https://yccyenchicheng.github.io/AutoSDF/"
+    paper: "https://arxiv.org/abs/2203.09516"
+    code: "https://github.com/yccyenchicheng/AutoSDF/"
+    year: "2022"
+    venue: "CVPR"
+    tags: 
+      - "3DPT"
+      - "Autoregressive Prior"
+      - "In Survey"
+
+  - title: "ShapeCrafter: A Recursive Text-Conditioned 3D Shape Generation Model"
+    authors: "Rao Fu and Xiao Zhan and Yiwen Chen and Daniel Ritchie and Srinath Sridhar"
+    web: "https://ivl.cs.brown.edu/research/shapecrafter.html"
+    paper: "https://arxiv.org/abs/2207.09446"
+    code: "https://github.com/FreddieRao/ShapeCrafter"
+    year: "2022"
+    venue: "NeurIPS"
+    tags: 
+      - "3DPT"
+      - "Autoregressive Prior"
+      - "In Survey"
+
+  - title: "SDFusion: Multimodal 3D Shape Completion, Reconstruction, and Generation"
+    authors: "Yen-Chi Cheng and Hsin-Ying Lee and Sergey Tulyakov and Alexander Schwing and Liangyan Gui"
+    web: "https://yccyenchicheng.github.io/SDFusion/"
+    paper: "https://arxiv.org/abs/2212.04493"
+    code: "https://github.com/yccyenchicheng/SDFusion"
+    year: "2023"
+    venue: "CVPR"
+    tags: 
+      - "3DPT"
+      - "Diffusion Prior"
+      - "In Survey"
+
+  - title: "Diffusion-SDF: Text-to-Shape via Voxelized Diffusion"
+    authors: "Muheng Li and Yueqi Duan and Jie Zhou and Jiwen Lu"
+    web: ""
+    paper: "https://arxiv.org/abs/2212.03293"
+    code: "https://github.com/ttlmh/Diffusion-SDF"
+    year: "2023"
+    venue: "CVPR"
+    tags: 
+      - "3DPT"
+      - "Diffusion Prior"
+      - "In Survey"
+
+  - title: "3DQD: Generalized Deep 3D Shape Prior via Part-Discretized Diffusion Process"
+    authors: "Yuhan Li and Yishun Dou and Xuanhong Chen and Bingbing Ni and Yilin Sun and Yutian Liu and Fuzhen Wang"
+    web: ""
+    paper: "https://arxiv.org/abs/2303.10406"
+    code: "https://github.com/colorful-liyu/3DQD"
+    year: "2023"
+    venue: "CVPR"
+    tags: 
+      - "3DPT"
+      - "Diffusion Prior"
+      - "In Survey"
+
+  - title: "Shap-E: Generating Conditional 3D Implicit Functions"
+    authors: "Heewoo Jun and Alex Nichol"
+    web: ""
+    paper: "https://arxiv.org/abs/2305.02463"
+    code: "https://github.com/openai/shap-e"
+    year: "2023"
+    venue: "Arxiv"
+    tags: 
+      - "3DPT"
+      - "Diffusion Prior"
+      - "In Survey"
+
+  - title: "Michelangelo: Conditional 3D Shape Generation based on Shape-Image-Text Aligned Latent Representation"
+    authors: "Zibo Zhao and Wen Liu and Xin Chen and Xianfang Zeng and Rui Wang and Pei Cheng and Bin Fu and Tao Chen and Gang Yu and Shenghua Gao"
+    web: ""
+    paper: "https://arxiv.org/abs/2306.17115"
+    code: "https://github.com/NeuralCarver/Michelangelo"
+    year: "2023"
+    venue: "NeurIPS"
+    tags: 
+      - "3DPT"
+      - "Diffusion Prior"
+      - "In Survey"
+
+  - title: "ShapeScaffolder: Structure-Aware 3D Shape Generation from Text"
+    authors: "Tian, Xi, Yong-Liang Yang, and Qi Wu"
+    web: ""
+    paper: "https://www.yongliangyang.net/docs/shapescaffolder_iccv23.pdf"
+    code: ""
+    year: "2023"
+    venue: "ICCV"
+    tags: 
+      - "3DPT"
+      - "Structure Aware"
+      - "In Survey"
+
+  - title: "SALAD: Part-Level Latent Diffusion for 3D Shape Generation and Manipulation"
+    authors: "Juil Koo and Seungwoo Yoo and Minh Hieu Nguyen and Minhyuk Sung"
+    web: "https://salad3d.github.io/"
+    paper: "https://arxiv.org/abs/2303.12236"
+    code: "https://github.com/KAIST-Visual-AI-Group/SALAD"
+    year: "2023"
+    venue: "ICCV"
+    tags: 
+      - "3DPT"
+      - "Structure Aware"
+      - "In Survey"
+
+  - title: "Neural Shape Compiler: A Unified Framework for Transforming between Text, Point Cloud, and Program"
+    authors: "Tiange Luo and Honglak Lee and Justin Johnson"
+    web: ""
+    paper: "https://arxiv.org/abs/2212.12952"
+    code: "https://github.com/tiangeluo/ShapeCompiler"
+    year: "2022"
+    venue: "Arxiv"
+    tags: 
+      - "3DPT"
+      - "Structure Aware"
+      - "In Survey"
+
+  ################################################################################################
+  # 3DUT Papers
+  ################################################################################################
+
   # - title: "Title of the Paper"
   #   authors: "List of Authors"
   #   web: "URL to the Paper's Webpage"
